@@ -4,6 +4,10 @@ h1, h2, h3, p{
     color: #282833;
 }
 
+p{
+    text-align: left;
+}
+
 #container {
     display: block;
     margin-left: auto;
@@ -17,7 +21,6 @@ html {
 
 #container{
     background-color: white;
-    border-bottom-width: 20px;
 }
 
 .legend{
