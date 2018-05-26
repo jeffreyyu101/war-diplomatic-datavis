@@ -1,6 +1,7 @@
-h1, h2{
+h1, h2, h3, p{
     text-align: center;
     font-family: 'Sunflower', sans-serif;
+    color: #282833;
 }
 
 #container {
@@ -8,4 +9,17 @@ h1, h2{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+html {
+    background-color: #0000;
+}
+
+#container{
+    background-color: white;
+    border-bottom-width: 20px;
+}
+
+.legend{
+    background-color: white;
 }

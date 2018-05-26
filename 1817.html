@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title>A D3 map</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  <script src="datamaps.world.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+</head>
+
+<body>
+    <h2>US Diplomatic Representation in Foreign Countries</h2>
+    <h3>1917</h3>
+    <div id="container" style="position: relative; width: 500px; height: 300px;"></div>
+    <script>
+        var map = new Datamap({
+        element: document.getElementById('container'),
+        fills: {
+            0: 'red',
+            1: '#ccccff',
+            2: '#7f7fff',
+            3: '#3232ff',
+            9: 'black',
+            defaultFill: '#DCDCDC'
+        },
+        data: {
+UKG: {fillKey: '2'}, 
+NTH: {fillKey: '2'}, 
+FRN: {fillKey: '2'}, 
+SWZ: {fillKey: '0'}, 
+SPN: {fillKey: '2'}, 
+POR: {fillKey: '0'}, 
+BAV: {fillKey: '0'}, 
+GMY: {fillKey: '0'}, 
+BAD: {fillKey: '0'}, 
+SAX: {fillKey: '0'}, 
+WRT: {fillKey: '0'}, 
+HSE: {fillKey: '0'}, 
+HSG: {fillKey: '0'}, 
+AUH: {fillKey: '0'}, 
+ITA: {fillKey: '0'}, 
+PAP: {fillKey: '0'}, 
+SIC: {fillKey: '2'}, 
+TUS: {fillKey: '0'}, 
+RUS: {fillKey: '2'}, 
+SWD: {fillKey: '2'}, 
+DEN: {fillKey: '2'}, 
+TUR: {fillKey: '0'}, 
+        }
+    });
+    
+    // Draw a legend for this map
+    map.legend();
+    </script>
+    
+    
+    
+</body>
+</html>
