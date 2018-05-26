@@ -1,0 +1,99 @@
+<html>
+<head>
+  <title>A D3 map</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  <script src="datamaps.world.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Data Visualization</h1>
+    <div id="container" style="position: relative; width: 500px; height: 300px;"></div>
+    <script>
+        var map = new Datamap({
+        element: document.getElementById('container'),
+        fills: {
+            0: 'red',
+            1: '#ccccff',
+            2: '#7f7fff',
+            3: '#3232ff',
+            9: 'black',
+            defaultFill: '#DCDCDC'
+        },
+        data: {
+            CAN: {fillKey: '2'},  
+CUB: {fillKey: '3'},  
+HAI: {fillKey: '2'},  
+DOM: {fillKey: '2'},  
+MEX: {fillKey: '3'},  
+GUA: {fillKey: '2'},  
+HON: {fillKey: '2'},  
+SAL: {fillKey: '2'},  
+NIC: {fillKey: '2'},  
+COS: {fillKey: '2'},  
+PAN: {fillKey: '3'},  
+COL: {fillKey: '3'},  
+VEN: {fillKey: '3'},  
+ECU: {fillKey: '2'},  
+PER: {fillKey: '3'},  
+BRA: {fillKey: '3'},  
+BOL: {fillKey: '2'},  
+PAR: {fillKey: '2'},  
+CHL: {fillKey: '3'},  
+ARG: {fillKey: '3'},  
+URU: {fillKey: '2'},  
+UKG: {fillKey: '3'},  
+IRE: {fillKey: '2'},  
+NTH: {fillKey: '2'},  
+BEL: {fillKey: '3'},  
+LUX: {fillKey: '2'},  
+FRN: {fillKey: '3'},  
+SWZ: {fillKey: '2'},  
+SPN: {fillKey: '3'},  
+POR: {fillKey: '2'},  
+GMY: {fillKey: '3'},  
+HUN: {fillKey: '2'},  
+ITA: {fillKey: '3'},  
+YUG: {fillKey: '2'},  
+GRC: {fillKey: '2'},  
+BUL: {fillKey: '2'},  
+ROM: {fillKey: '2'},  
+RUS: {fillKey: '3'},  
+EST: {fillKey: '2'},  
+LAT: {fillKey: '2'},  
+LIT: {fillKey: '2'},  
+FIN: {fillKey: '2'},  
+SWD: {fillKey: '2'},  
+NOR: {fillKey: '2'},  
+DEN: {fillKey: '2'},  
+LBR: {fillKey: '2'},  
+SAF: {fillKey: '2'},  
+IRN: {fillKey: '2'},  
+TUR: {fillKey: '3'},  
+IRQ: {fillKey: '2'},  
+EGY: {fillKey: '2'},  
+SAU: {fillKey: '2'},  
+YAR: {fillKey: '0'},  
+AFG: {fillKey: '2'},  
+CHN: {fillKey: '3'},  
+MON: {fillKey: '0'},  
+JPN: {fillKey: '3'},  
+NEP: {fillKey: '0'},  
+THI: {fillKey: '2'},  
+AUL: {fillKey: '0'},  
+NEW: {fillKey: '0'},  
+
+
+
+        }
+    });
+
+    // Draw a legend for this map
+    map.legend();
+    </script>
+    
+    
+</body>
+</html>
